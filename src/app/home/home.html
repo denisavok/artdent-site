@@ -1,0 +1,275 @@
+<header class="header">
+  <div class="container nav">
+    <a class="logo">
+        <img src="/art-dent-logo.png" alt="ART DENT GROUP">
+    </a>
+
+    <nav>
+      <a href="#acasa" class="active">Acasa</a>
+      <a href="#despre">Despre noi</a>
+      <a href="#servicii">Servicii</a>
+      <a href="#tarife">Tarife</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="btn btn-light" (click)="programare()">
+      <span>▣</span>
+      Programeaza-te acum
+    </button>
+
+    <button class="menu-btn" (click)="menuOpen = !menuOpen">
+      ☰
+    </button>
+  </div>
+
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <a href="#acasa" (click)="menuOpen = false">Acasa</a>
+    <a href="#despre" (click)="menuOpen = false">Despre noi</a>
+    <a href="#servicii" (click)="menuOpen = false">Servicii</a>
+    <a href="#tarife" (click)="menuOpen = false">Tarife</a>
+    <a href="#contact" (click)="menuOpen = false">Contact</a>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section id="acasa" class="hero">
+  <div class="hero-content container">
+
+    <div class="hero-text">
+
+      <span class="eyebrow">
+        ZAMBETUL TAU, PRIORITATEA NOASTRA
+      </span>
+
+      <h1>
+        Clinica stomatologica
+        <br>
+        unde estetica se intalneste
+        <br>
+        cu sanatatea.
+      </h1>
+
+      <p>
+        Oferim servicii stomatologice complete, intr-un mediu modern,
+        relaxant si prietenos, pentru un zambet sanatos si un plus
+        de incredere in fiecare zi.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn btn-light" (click)="programare()">
+          Programeaza-te acum
+          <span>→</span>
+        </button>
+
+        <a href="#servicii" class="btn btn-outline">
+          Descopera serviciile
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="/art-dent-logo.png" alt="ART DENT GROUP">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- BENEFICII -->
+<section class="benefits">
+  <div class="container benefits-grid">
+
+    <div class="benefit">
+      <div class="icon">♧</div>
+      <h3>Tehnologie moderna</h3>
+      <p>pentru tratamente precise si sigure</p>
+    </div>
+
+    <div class="benefit">
+      <div class="icon">♢</div>
+      <h3>Profesionalism</h3>
+      <p>echipa cu experienta si dedicare</p>
+    </div>
+
+    <div class="benefit">
+      <div class="icon">♡</div>
+      <h3>Grija pentru pacient</h3>
+      <p>fiecare zambet conteaza</p>
+    </div>
+
+    <div class="benefit">
+      <div class="icon">♧</div>
+      <h3>Atmosfera relaxanta</h3>
+      <p>pentru o experienta placuta</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SERVICII -->
+<section id="servicii" class="services section">
+  <div class="container">
+
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow dark">SERVICIILE NOASTRE</span>
+        <h2>Solutii complete pentru un zambet perfect</h2>
+      </div>
+
+      <a href="#" class="view-all">
+        Vezi toate serviciile →
+      </a>
+    </div>
+
+    <!--<div class="services-grid">
+
+      <article
+        class="service-card"
+        *ngFor="let service of services"
+      >
+        <div class="service-image">
+          <img [src]="service.image" [alt]="service.title">
+        </div>
+
+        <div class="service-content">
+          <h3>{{ service.title }}</h3>
+
+          <a href="#" class="circle-arrow">
+            →
+          </a>
+        </div>
+      </article>
+
+    </div>-->
+  </div>
+</section>
+
+
+<!-- DESPRE -->
+<section id="despre" class="about">
+  <div class="about-image">
+    <img
+      alt="Clinica ART DENT"
+    >
+  </div>
+
+  <div class="about-content">
+
+    <span class="eyebrow">DE CE SA NE ALEGI</span>
+
+    <h2>
+      Mai mult decat o clinica,
+      este un loc al increderii
+    </h2>
+
+    <div class="about-features">
+
+      <div class="about-feature">
+        <span class="feature-icon">♧</span>
+        <div>
+          <h3>Experienta si expertiza medicala</h3>
+          <p>
+            Tratamente realizate de o echipa cu experienta vasta.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-feature">
+        <span class="feature-icon">♙</span>
+        <div>
+          <h3>Plan de tratament personalizat</h3>
+          <p>
+            Fiecare pacient este diferit, iar noi oferim solutii potrivite.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-feature">
+        <span class="feature-icon">☆</span>
+        <div>
+          <h3>Materiale premium</h3>
+          <p>
+            Folosim produse de calitate si tehnologii moderne.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-feature">
+        <span class="feature-icon">♡</span>
+        <div>
+          <h3>Comunicare transparenta</h3>
+          <p>
+            Te informam clar si sincer la fiecare pas.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container cta-inner">
+
+    <img src="assets/art-dent-logo.png" alt="ART DENT">
+
+    <div>
+      <h2>Esti gata pentru un zambet sanatos?</h2>
+      <p>
+        Programeaza o consultatie si lasa-ne sa avem grija de zambetul tau!
+      </p>
+    </div>
+
+    <button class="btn btn-dark" (click)="programare()">
+      Programeaza-te acum →
+    </button>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact" class="footer">
+  <div class="container">
+
+    <div class="footer-info">
+
+      <div>
+        <span>☎</span>
+        +40 728 123 456
+      </div>
+
+      <div>
+        <span>⌖</span>
+        Str. Exemplu nr. 10, Bucuresti
+      </div>
+
+      <div>
+        <span>◷</span>
+        L-V: 09:00 - 20:00 | S: 09:00 - 14:00
+      </div>
+
+      <div class="social">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">♪</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>ART DENT © 2025. Toate drepturile rezervate.</span>
+
+      <div>
+        <a href="#">Termeni si conditii</a>
+        <a href="#">Politica de confidentialitate</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
