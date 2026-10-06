@@ -5,6 +5,5 @@ import { register } from 'swiper/element/bundle';
 
 register();
 
-
 bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));
