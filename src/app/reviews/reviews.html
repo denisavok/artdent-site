@@ -1,12 +1,11 @@
 <section class="reviews">
   <h2>Ce spun pacientii nostri</h2>
-
+  <br>
   <swiper-container
     slides-per-view="3"
     space-between="30"
     navigation="true"
-    pagination="true"
-    loop="true">
+    loop="true" class="">
 
     <swiper-slide *ngFor="let review of reviews">
       <div class="review-card">
@@ -17,6 +16,5 @@
         <strong>{{ review.name }}</strong>
       </div>
     </swiper-slide>
-
   </swiper-container>
 </section>

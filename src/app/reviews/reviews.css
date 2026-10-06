@@ -1,0 +1,25 @@
+.reviews {
+  padding: 80px;
+  text-align: center;
+}
+
+.review-card {
+  height: 120px;
+  padding: 60px;
+
+  background: #fff;
+  color: #111;
+
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+}
+
