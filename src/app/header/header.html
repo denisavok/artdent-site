@@ -1,32 +1,31 @@
 <header class="header">
+
   <div class="container nav">
-    <a class="logo">
-        <img src="/art-dent-logo.png" alt="ART DENT GROUP">
+
+    <a class="logo" routerLink="/acasa">
+      <img src="/logo2.png" alt="ART DENT GROUP">
     </a>
 
     <nav>
-      <a href="#acasa" class="active">Acasa</a>
-      <a href="#despre">Despre noi</a>
-      <a href="/services"> Servicii </a>
-      <a href="#tarife">Tarife</a>
-      <a href="#contact">Contact</a>
+      <a routerLink="/acasa">Acasa</a>
+      <a routerLink="/despre">Despre noi</a>
+      <a routerLink="/servicii">Servicii</a>
+      <a routerLink="/acasa" fragment="tarife">Tarife</a>
+      <a routerLink="/contact">Contact</a>
     </nav>
 
-    <button class="btn btn-light" (click)="programare()">
+    <a class="btn btn-light" routerLink="/programare">
       <span>▣</span>
       Programeaza-te acum
-    </button>
+    </a>
 
-    <button class="menu-btn" (click)="menuOpen = !menuOpen">
+    <button
+      type="button"
+      class="menu-btn"
+      (click)="menuOpen = !menuOpen">
       ☰
     </button>
+
   </div>
 
-  <div class="mobile-menu" [class.open]="menuOpen">
-    <a href="#acasa" (click)="menuOpen = false">Acasa</a>
-    <a href="#despre" (click)="menuOpen = false">Despre noi</a>
-    <a routerLink="/services" (click)="menuOpen = false"> Servicii </a>
-    <a href="#tarife" (click)="menuOpen = false">Tarife</a>
-    <a href="#contact" (click)="menuOpen = false">Contact</a>
-  </div>
 </header>

@@ -1,35 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './header.html',
-  styleUrl: './header.css',
+  styleUrl: './header.css'
 })
 export class Header {
-  
   menuOpen = false;
-
-  services = [
-    {
-      title: 'Stomatologie generala',
-    },
-    {
-      title: 'Estetica dentara',
-    },
-    {
-      title: 'Implantologie',
-    },
-    {
-      title: 'Ortodontie',
-    },
-    {
-      title: 'Stomatologie pediatrica',
-    }
-  ];
-
-  programare(): void {
-    console.log('Programare solicitata');
-  }
-  
 }
